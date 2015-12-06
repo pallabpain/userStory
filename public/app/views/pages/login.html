@@ -1,0 +1,12 @@
+<div class="container" data-ng-controller="MainController as login">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-xs-8 col-md-offset-4 col-sm-offset-3 col-xs-offset-2">
+			<h1 class="text-center">User Login</h1>
+			<form method="post" class="form-signin" data-ng-submit="login.doLogin()">
+				<input type="text" name="username" placeholder="Username" class="form-control" data-ng-model="login.loginData.username">
+				<input type="password" name="password" placeholder="Password" class="form-control" data-ng-model="login.loginData.password">
+				<button type="submit" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp; Login</button>
+			</form>
+		</div>
+	</div>	
+</div>

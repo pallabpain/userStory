@@ -1,0 +1,13 @@
+<div class="container" data-ng-controller="CreateUserController as user">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-xs-8 col-md-offset-4 col-sm-offset-3 col-xs-offset-2">
+			<h1 class="text-center">Create an account</h1>
+			<form method="post" class="form-signin" data-ng-submit="user.signupUser()">
+				<input placeholder="Your Name" type="text" name="name" class="form-control" data-ng-model="user.userData.name">
+				<input placeholder="Username" type="text" name="username" class="form-control" data-ng-model="user.userData.username">
+				<input placeholder="Password" type="password" name="password" class="form-control" data-ng-model="user.userData.password">
+				<button type="submit" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp; Sign up</button>
+			</form>
+		</div>
+	</div>	
+</div>
