@@ -1,6 +1,6 @@
 module.exports = {
 
-	"database":"mongodb://localhost:27017/userstory",
+	"database": process.env.MONGODB_URL,
 
 	"port": process.env.PORT || 3000,
 
