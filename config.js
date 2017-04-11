@@ -1,6 +1,6 @@
 module.exports = {
 
-	"database": process.env.MONGODB_URL,
+	"database": process.env.MONGO_URL,
 
 	"port": process.env.PORT || 3000,
 
